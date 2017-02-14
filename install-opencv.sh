@@ -29,9 +29,6 @@ sudo apt-get install -y python-dev python-tk python-numpy python3-dev python3-tk
 # Java:
 sudo apt-get install -y ant default-jdk
 
-# Documentation:
-sudo apt-get install -y doxygen
-
 # INSTALL THE LIBRARY (YOU CAN CHANGE '3.2.0' FOR THE LAST STABLE VERSION)
 
 sudo apt-get install -y unzip wget
@@ -42,7 +39,7 @@ mv opencv-3.2.0 OpenCV
 cd OpenCV
 mkdir build
 cd build
-cmake -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON ..
+cmake -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON ..
 make -j4
 sudo make install
 sudo ldconfig
